@@ -1422,7 +1422,7 @@ border-radius: 5px;
 {
     margin-top: 25px;
     margin-left: 90px;
-    background-color: rgb(238, 232, 232);
+    background-color: transparent;
     padding: 1px;
     width: 730px;
 }
@@ -1514,8 +1514,12 @@ border-radius: 5px;
 .slider-product-one-content-items:nth-child(3)
 {
 transform: translateX(200%);
-margin-top: -460px;
+margin-top: -430px;
 position: relative;
+}
+.slider-product-one-content-item
+{
+    box-shadow: 0 0 5px rgba(0, 0, 0,0.3);
 }
 /* --------slider produt2======== */
 
