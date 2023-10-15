@@ -46,6 +46,28 @@ leftbtntwo.addEventListener("click",function (){
     }
     document.querySelector(".slider-product-one-content-items-content").style.right = index* 100+"%";
 })
+const rightbtntwoo  = document.querySelector(".fa-chevron-right-twoo");
+const leftbtntwoo =document.querySelector(".fa-chevron-left-twoo");
+const imgNubertwoo=document.querySelectorAll(".container-sale-one-content-items")
+
+
+rightbtntwoo.addEventListener("click",function () {
+    index=index+1;
+    if(index>imgNubertwoo.length-1)
+    {
+        index=0;
+    }
+    document.querySelector(".container-sale-one-content-items-content").style.right = index* 100 +"%";
+})
+
+leftbtntwoo.addEventListener("click",function (){
+    index=index-1;
+    if(index<=0)
+    {
+        index=imgNubertwoo.length-1;
+    }
+    document.querySelector(".container-sale-one-content-items-content").style.right = index* 100+"%";
+})
 
 /*
 function imgAuto(){
