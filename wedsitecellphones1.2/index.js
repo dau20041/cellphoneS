@@ -148,8 +148,8 @@ function an3()
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    const button = document.querySelector('.show-more-product');
-    const moreContent = document.querySelector('.more-product');
+    const button = document.querySelector('.show-more-content');
+    const moreContent = document.querySelector('.more-content');
     button.addEventListener('click', function() {
         if (moreContent.style.display === 'none' || moreContent.style.display === '') {
             moreContent.style.display = 'block';
@@ -158,18 +158,6 @@ document.addEventListener('DOMContentLoaded', function() {
             moreContent.style.display = 'none';
             button.innerText = 'Xem thêm';
         }
-    });
-
-    const button2 = document.querySelector('.show-more-content');
-    const moreContent2 = document.querySelector('.more-content');
-    button2.addEventListener('click', function() {
-        if (moreContent2.style.display === 'none' || moreContent2.style.display === '') {
-            moreContent2.style.display = 'block';
-            button2.innerText = 'Thu gọn';
-        } else {
-            moreContent2.style.display = 'none';
-            button2.innerText = 'Xem thêm';
-        }
-    });
-    });
+    })
+});
     
