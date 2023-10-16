@@ -1,3 +1,5 @@
+    
+
 var sliderIndex = ()=>{
 
 //Slider----------------------------
@@ -24,6 +26,19 @@ leftbtn.addEventListener("click",function(){
     }
     document.querySelector(".slider-content-left-pic").style.right = index* 100+"%";
 })
+// --------------------
+function imgAuto(){
+    index=index+1;
+    if(index>imgNum.length-1)
+    {
+        index=0;
+    }
+    console.log(index) 
+    document.querySelector(".slider-content-left-pic").style.right = index* 100 +"%";
+}
+setInterval(imgAuto,4000)
+
+// ----------------------
 const rightbtntwo  = document.querySelector(".fa-chevron-right-two");
 const leftbtntwo =document.querySelector(".fa-chevron-left-two");
 const imgNubertwo=document.querySelectorAll(".slider-product-one-content-items")
@@ -46,6 +61,20 @@ leftbtntwo.addEventListener("click",function (){
     }
     document.querySelector(".slider-product-one-content-items-content").style.right = index* 100+"%";
 })
+// ----------------
+
+function imgAuto1(){
+    index=index+1;
+    if(index>imgNubertwo.length-1)
+    {
+        index=0;
+    }
+    console.log(index) 
+    document.querySelector(".slider-product-one-content-items-content").style.right = index* 100 +"%";
+}
+setInterval(imgAuto1,3000)
+
+// ----------------
 const rightbtntwoo  = document.querySelector(".fa-chevron-right-twoo");
 const leftbtntwoo =document.querySelector(".fa-chevron-left-twoo");
 const imgNubertwoo=document.querySelectorAll(".container-sale-one-content-items")
@@ -117,3 +146,30 @@ function an3()
 {
     document.getElementById("hide4").style.display ="none";
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const button = document.querySelector('.show-more-product');
+    const moreContent = document.querySelector('.more-product');
+    button.addEventListener('click', function() {
+        if (moreContent.style.display === 'none' || moreContent.style.display === '') {
+            moreContent.style.display = 'block';
+            button.innerText = 'Thu gọn';
+        } else {
+            moreContent.style.display = 'none';
+            button.innerText = 'Xem thêm';
+        }
+    });
+
+    const button2 = document.querySelector('.show-more-content');
+    const moreContent2 = document.querySelector('.more-content');
+    button2.addEventListener('click', function() {
+        if (moreContent2.style.display === 'none' || moreContent2.style.display === '') {
+            moreContent2.style.display = 'block';
+            button2.innerText = 'Thu gọn';
+        } else {
+            moreContent2.style.display = 'none';
+            button2.innerText = 'Xem thêm';
+        }
+    });
+    });
+    
