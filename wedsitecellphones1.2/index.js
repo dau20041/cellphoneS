@@ -160,4 +160,70 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     })
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const button = document.querySelector('.show-more-content-question');
+    const moreContent = document.querySelector('.more-content-question');
+    button.addEventListener('click', function() {
+        if (moreContent.style.display === 'none' || moreContent.style.display === '') {
+            moreContent.style.display = 'block';
+            
+        } else {
+            moreContent.style.display = 'none';
+            
+        }
+    })
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const button = document.querySelector('.show-more-content-question1');
+    const moreContent = document.querySelector('.more-content-question1');
+    button.addEventListener('click', function() {
+        if (moreContent.style.display === 'none' || moreContent.style.display === '') {
+            moreContent.style.display = 'block';
+            
+        } else {
+            moreContent.style.display = 'none';
+            
+        }
+    })
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const button = document.querySelector('.show-more-content-question2');
+    const moreContent = document.querySelector('.more-content-question2');
+    button.addEventListener('click', function() {
+        if (moreContent.style.display === 'none' || moreContent.style.display === '') {
+            moreContent.style.display = 'block';
+            
+        } else {
+            moreContent.style.display = 'none';
+            
+        }
+    })
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const button = document.querySelector('.show-more-content-question3');
+    const moreContent = document.querySelector('.more-content-question3');
+    button.addEventListener('click', function() {
+        if (moreContent.style.display === 'none' || moreContent.style.display === '') {
+            moreContent.style.display = 'block';
+            
+        } else {
+            moreContent.style.display = 'none';
+            
+        }
+    })
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const button = document.querySelector('.show-more-content-question4');
+    const moreContent = document.querySelector('.more-content-question4');
+    button.addEventListener('click', function() {
+        if (moreContent.style.display === 'none' || moreContent.style.display === '') {
+            moreContent.style.display = 'block';
+            
+        } else {
+            moreContent.style.display = 'none';
+            
+        }
+    })
+});
+
     
