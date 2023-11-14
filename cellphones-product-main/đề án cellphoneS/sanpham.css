@@ -2098,6 +2098,13 @@ justify-content: left;
   padding-right: 20px;
   margin-top: -30px;
   transform: translateX(210%);
+  
+  
+}
+.text-sale-input i
+{
+  transform: translateY(-26.7px);
+  margin-left: 665px;
 }
 .content-sale
 {
